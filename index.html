@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Details Storage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h2>Form Details</h2>
+    <form id="details-form">
+
+      <label for="name">Name:</label> 
+      <input 
+      type="text" id="name" required name="name" placeholder="Enter your name"> </br></br>
+
+      <label for="number">Phone Number:</label>
+      <input type="text" name="phone_number" id="phone" required placeholder="Enter your phone number"> </br></br>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Enter your email"> </br></br>
+
+      <label for="dob">DOB:</label>
+      <input type="date" name="dob" id="dob" required> </br></br>
+
+      <label for="profile">Profile Pic</label>
+      <input type="file" name="profile" id="profile" required> </br></br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="details-container">
+    <h2>Saved Details</h2>
+    <ul class="details-list" id="details-list"></ul>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+  <script src="firebase.js"></script>
+  <script src="save-details.js"></script>
+  
+
+
+</body>
+</html>

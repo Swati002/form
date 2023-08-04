@@ -1,0 +1,16 @@
+body{
+  margin: 0 15%;
+}.form-container {
+    width: 300px;
+    margin: 20px auto;
+  }
+  .details-list {
+    list-style: none;
+    padding: 0;
+  }
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
